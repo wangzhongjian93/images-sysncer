@@ -27,5 +27,5 @@ jobs:
 
       - name: Use Skopeo Tools Sync Image to Docker Hub
         run: |
-          skopeo copy docker://docker.io/hslr/alpine:3.18.2 docker:registry.cn-hangzhou.aliyuncs.com/wzj_hub/alpine:3.18.2
+          skopeo copy docker://docker.io/library/alpine:3.18.2 docker:registry.cn-hangzhou.aliyuncs.com/wzj_hub/alpine:3.18.2
         # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称 作者：全栈工程师修炼指南
