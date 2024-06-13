@@ -27,5 +27,5 @@ jobs:
 
       - name: Use Skopeo Tools Sync Image to Docker Hub 1
         run: |
-          skopeo copy docker://docker.io/library/arm64v8/golang:1.17 docker://registry.cn-hangzhou.aliyuncs.com/wzj_hub/golang:1.17arm
+          skopeo copy docker://docker.io/library/arm64v8/golang:1.22 docker://registry.cn-hangzhou.aliyuncs.com/wzj_hub/golang:1.22arm
         # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
