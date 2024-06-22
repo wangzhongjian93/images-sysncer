@@ -27,5 +27,5 @@ jobs:
 
       - name: Use Skopeo Tools Sync Image to Docker Hub 1
         run: |
-          skopeo copy docker://docker.io/library/emqx:5.7 docker://registry.cn-hangzhou.aliyuncs.com/wzj_hub/emqx:5.7
+          skopeo copy docker://docker.io/library/minio:RELEASE.2024-06-04T19-20-08Z docker://registry.cn-hangzhou.aliyuncs.com/wzj_hub/minio:RELEASE.2024-06-04T19-20-08Z
         # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
