@@ -27,5 +27,5 @@ jobs:
 
       - name: Use Skopeo Tools Sync Image to Docker Hub 1
         run: |
-          skopeo copy docker://docker.io/registry.cn-hangzhou.aliyuncs.com/helowin/oracle_11g docker://registry.cn-hangzhou.aliyuncs.com/wzj_hub/oracle11g:helowin
+          skopeo copy docker://docker.io/library/emqx docker://registry.cn-hangzhou.aliyuncs.com/wzj_hub/emqx:latest
         # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
